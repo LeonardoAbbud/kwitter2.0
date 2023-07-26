@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<!--Definir a linguagem utilizada no documento-->
+
+<head>
+
+	<!--Armazena as informações e documentos do site-->
+
+	<title>Kwiter</title>
+
+	<!--Título do site e nao do conteúdo da página -->
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--É usada em páginas web para informar ao navegador como a página deve ser exibida em dispositivos móveis.-->
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="kwitter.js"></script>
+</head>
+
+<!--Essa sintaxe é usada em uma página web para importar recursos externos, como arquivos de estilo, 
+	bibliotecas de script e arquivos locais, para serem usados na página.-->
+
+<body>
+
+	<center>
+		<h1 class="header">
+			Kwitter <sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+
+			<!--Essas classes são fornecidas pela biblioteca Bootstrap e são usadas para definir 
+			o layout da página e a responsividade do design para diferentes tamanhos de tela.
+A classe "col-lg-4" especifica que a div deve ocupar 4 colunas em uma tela grande, 
+"col-md-6" especifica que ela deve ocupar 6 colunas em uma tela média, 
+"col-sm-6" especifica que ela deve ocupar 6 colunas em uma tela pequena e 
+"col-xs-11"especifica que ela deve ocupar 11 colunas em uma tela extra pequena.-->
+
+			<img src="logo.png" class="logo">
+			<h3>Veja o que está acontecendo no mundo</h3>
+
+			<h4>Junte-se ao Kwitter hoje</h4>
+
+			<div class="form-group">
+				<label>Nome de Usuário:</label>
+				<input type="text" id="userName" class="form-control" placeholder="Nome de Usuário">
+
+
+				<!--Entrada do tipo texto / campo de formulário / dica para o usuario inserir algo numa entrada -->
+
+			</div>
+
+			<button id="loginButton" class="btn btn-primary" onclick="addUser()">Login</button>
+
+			<!--botão com um estilo visual consistente em toda a página.
+A classe "btn" é usada para definir o estilo básico de um botão em Bootstrap, 
+como bordas arredondadas, cor de fundo e cor de texto. 
+A classe "btn-primary" é usada para definir o estilo específico do botão como um botão principal em azul, 
+que geralmente indica uma ação principal ou um botão de destaque.-->
+
+			<br><br>
+			
+		</div>
+	</center>
+
+</body>
+
+</html>
